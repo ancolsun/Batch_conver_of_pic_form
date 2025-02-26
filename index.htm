@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图像批量转换</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      background-color: #f2f2f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1c1c1e;
+      margin-bottom: 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1c1c1e;
+      margin-bottom: 5px;
+    }
+    button {
+      background-color: #007aff;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>图像批量转换</h1>
+  <div class="container">
+    <div class="form-group">
+      <label>需要转换的目录</label>
+      <button id="select-source">选择目录</button>
+    </div>
+    <div class="form-group">
+      <label>设置目标目录</label>
+      <button id="select-target">选择目录</button>
+    </div>
+    <div class="form-group">
+      <label>选择目标格式</label>
+      <div class="checkbox-group">
+        <label class="checkbox-item"><input type="checkbox" value="jpg"> JPG</label>
+        <label class="checkbox-item"><input type="checkbox" value="png"> PNG</label>
+        <label class="checkbox-item"><input type="checkbox" value="gif"> GIF</label>
+        <label class="checkbox-item"><input type="checkbox" value="bmp"> BMP</label>
+        <label class="checkbox-item"><input type="checkbox" value="tiff"> TIFF</label>
+      </div>
+    </div>
+    <button id="convert">转换</button>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

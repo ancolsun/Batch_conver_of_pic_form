@@ -1,0 +1,13 @@
+解压后
+目录里有 index.htm
+         script.js
+         Batch_conver_of_pic_form.bat
+         说明.txt
+
+直接双击 Batch_conver_of_pic_form.bat ，会自动启动本地server并打开index页面。
+
+关闭cmd窗口，server即刻关闭，网页不可用。
+
+
+--------------
+2025-2-26  Creat by ancolmanga
